@@ -1,0 +1,42 @@
+@import '../../style/color.scss';
+
+.description {
+    color: $pink;
+    display: flex;
+    padding: 56px;
+    margin: 0 auto;
+    background-color: $merlot;
+    justify-content: space-between;
+    min-height: calc(461px - 112px);
+    font-family: 'Inter', sans-serif;
+    width: clamp(280px, calc(100% - 112px), calc(1440px - 112px));
+}
+
+.description__title {
+    font-size: 47px;
+    word-spacing: 4.2px;
+    letter-spacing: 0.4px;
+    font-family: 'Azeret Mono', monospace;
+}
+
+.desctiption-wrapper {
+    &:first-child {
+        margin-top: 62px;
+        line-height: 63px;
+    }
+    &:last-child {
+        margin-right: 20px;
+    }
+}
+
+.description__content {
+    font-size: 18px;
+    margin-left: 5px;
+    max-width: 595px;
+    line-height: 27px;
+    margin-right: 47px;
+    word-spacing: 0.6px;
+    &:first-child {
+        margin-top: 80px;
+    }
+}
