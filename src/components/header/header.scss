@@ -1,0 +1,41 @@
+@import '../../style/color.scss';
+
+.header {
+    display: flex;
+    margin: 0 auto;
+    min-height: 120px;
+    align-items: center;
+    background-color: $merlot;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    width: clamp(280px, 100%, 1440px);
+}
+
+.header__link {
+    display: flex;
+    margin: 0 45px;
+    justify-content: space-around;
+    & > a {
+        color: $pink;
+        display: flex;
+        font-size: 15px;
+        margin: 0 10px 3px;
+        align-items: center;
+        letter-spacing: 0.3px;
+    }
+}
+
+.header__title {
+    color: $pink;
+    font-weight: bold;
+    word-spacing: -3px;
+    margin: 0 126px 0 0;
+    font-size: clamp(14px, 5em, 44px);
+    font-family: 'Azeret Mono', monospace;
+}
+
+.header__link-image > a {
+    &:first-child {
+        margin-right: 4px;
+    }
+}
