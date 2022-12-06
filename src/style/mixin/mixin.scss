@@ -1,0 +1,12 @@
+@import '../color.scss';
+
+@mixin button ($color: $gray, $background: white, $border: $gray, $width: 100%, $height: 56px) {
+    color: $color;
+    height: $height;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid $gray;
+    width: calc($width - margin);
+    background-color: $background;
+    font-family: 'Inter', sans-serif;
+}
