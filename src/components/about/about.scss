@@ -1,0 +1,35 @@
+@import '../../style/color.scss';
+
+.about {
+    display: flex;
+    margin: 0 auto;
+    min-height: 713px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    width: clamp(280px, 100%, 1440px);
+}
+
+.about__title {
+    color: $black;
+    font-size: 17px;
+    line-height: 3px;
+    margin-bottom: 12px;
+    font-family: 'Azeret Mono', monospace;
+}
+
+.about__content {
+    color: $black;
+    text-align: center;
+    font-weight: normal;
+    word-spacing: 1.1px;
+    line-height: 44.8px;
+    margin-bottom: 12px;
+    width: clamp(280px, 100%, 870px);
+    font-size: clamp(16px, 5em, 32px);
+}
+
+.about__content_name-cafe {
+    font-style: oblique;
+}
