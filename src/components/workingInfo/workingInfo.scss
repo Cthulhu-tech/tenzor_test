@@ -1,0 +1,53 @@
+@import '../../style/color.scss';
+
+.working-info {
+    color: white;
+    margin: 0 auto;
+    min-height: 473px;
+    text-align: center;
+    background-color: $olive;
+    width: clamp(280px, 100%, 1440px);
+    font-family: 'Azeret Mono', monospace;
+    
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wrapper_info {
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    flex-direction: column;
+    &:first-child {
+        padding-left: 24px;
+    }
+    &:last-child {
+        font-size: 26px;
+        padding-right: 22px;
+        word-spacing: 2.5px;
+        letter-spacing: 0.4px;
+    }
+}
+
+.sub-wrapper_info {
+    &:last-child {
+        margin-top: 35px;
+    }
+}
+
+.working-info__title {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22.6px;
+    margin-bottom: 15px;
+}
+
+.working-info__content {
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.15px;
+    font-family: 'Inter', sans-serif;
+}

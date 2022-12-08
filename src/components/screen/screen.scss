@@ -1,0 +1,13 @@
+@import '../../style/color.scss';
+
+.screen {
+    margin: 0 auto;
+    min-height: 680px;
+    background-color: $merlot;
+    width: clamp(280px, 100%, 1440px);
+}
+
+.screen-wrapper {
+    margin: 0 auto;
+    width: calc(100% - 112px);
+}

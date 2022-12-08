@@ -1,0 +1,64 @@
+@import '../../style/mixin/mixin.scss';
+@import '../../style/color.scss';
+
+.menu {
+    color: $gray;
+    margin: 0 auto;
+    min-height: 1036px;
+    padding: 120px 56px;
+    background-color: $ivory;
+    font-family: 'Azeret Mono', monospace;
+    width: clamp(280px, calc(100% - 112px), calc(1440px - 112px));
+
+    display: grid;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.menu__title {
+    font-size: 18px;
+    margin-bottom: 17px;
+    font-weight: bolder;
+}
+
+.menu__content {
+    font-size: 32px;
+    font-weight: 500;
+    max-width: 560px;
+    letter-spacing: 0;
+    line-height: 45px;
+    word-spacing: 1.1px;
+    font-family: 'Inter', sans-serif;
+}
+
+.menu__info {
+    text-align: center;
+    background-color: white;
+    max-width: clamp(280px, 100%, 664px);
+}
+
+.menu__title-info {
+    color: black;
+    margin: 48px 0;
+    font-size: 36px;
+    letter-spacing: -0.6px;
+}
+
+.menu__button-wrapper {
+    display: flex;
+    max-width: 80%;
+    margin-top: 68px;
+    flex-direction: column;
+}
+
+.button {
+    margin: 5.4px 0;
+    @include button($gray, white, transparent);
+}
+
+.button-selected {
+    margin: 5.4px 0;
+    @include button(white, $gray, transparent);
+}

@@ -1,0 +1,49 @@
+@import '../../style/color.scss';
+
+
+.footer {
+    display: flex;
+    padding: 56px;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    min-height: calc(187px - 112px);
+    font-family: 'Inter', sans-serif;
+    width: clamp(280px, calc(100% - 112px), calc(1440px - 112px));
+}
+
+.footer__link-wrapper {
+    font-size: 15px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    word-spacing: 0px;
+    letter-spacing: 0.4px;
+    width: clamp(280px, 100%, 650px);
+    & > a {
+        color: $black;
+        margin: 0 16px;
+    }
+}
+
+.footer__created-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    min-height: 27px;
+    align-items: center;
+    justify-content: space-between;
+    width: clamp(280px, 100%, 433px);
+}
+
+.footer__content {
+    color: $gray;
+    margin: 0 9px;
+    font-size: 13px;
+    line-height: 20px;
+    word-spacing: 0.6px;
+    letter-spacing: 0.1px;
+}
